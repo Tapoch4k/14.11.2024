@@ -96,16 +96,12 @@
     </div>
     <h1>Style Czcionek</h1>
 <button onclick="toggleDarkMode()" class="toggle-button">Tryb Ciemny / Jasny</button>
-<div class="font-container">
-    <!-- Pozostałe elementy HTML -->
-</div>
 
 <script>
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
         
-        // Zmieniamy tekst przycisku na podstawie trybu
         const button = document.querySelector('.toggle-button');
         if (body.classList.contains('dark-mode')) {
             button.textContent = 'Tryb Jasny';
